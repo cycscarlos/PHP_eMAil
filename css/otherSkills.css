@@ -1,0 +1,141 @@
+/*! Se aplicarán estos estilos cuando el tamaño del dispositivo sea menor o igual a 768px */
+
+.otherSkills {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.otherSkills-title {
+  font-size: 30px;
+  margin: 10px auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.otherSkills-subtitle {
+  font-size: 20px;
+  margin: 50px auto 40px auto;
+  font-weight: bold;
+  text-align: center;
+  color: var(--skill-color);
+}
+
+.otherSkills-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+
+  /*# Solo para igualar a Skills   */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.otherSkills-skill {
+  font-size: 17px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 42px;
+  padding: 0.5em 0.7em;
+  margin: 10px;
+}
+
+/* .otherSkillsGrid-container {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "mainframe"
+    "networking"
+    "security";
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(252px);
+} */
+
+/* .mainframe {
+  grid-area: mainframe;
+  justify-self: center;
+  align-self: flex-start;
+}
+.networking {
+  grid-area: networking;
+  justify-self: center;
+  align-self: flex-start;
+}
+.security {
+  grid-area: security;
+  justify-self: center;
+  align-self: flex-start;
+} */
+
+/*! Se aplicarán estos estilos cuando el tamaño del dispositivo sea mayor o igual a 768px */
+
+@media only screen and (min-width: 768px) {
+  .otherSkills-title {
+    font-size: 40px;
+    margin: 25px auto;
+  }
+  .otherSkills-subtitle {
+    font-size: 25px;
+    margin: 50px auto;
+  }
+  .otherSkills-skill {
+    font-size: 24px;
+    padding: 0.5em 0.7em;
+    margin: 10px;
+  }
+}
+
+/*! Se aplicarán estos estilos cuando el tamaño del dispositivo sea mayor o igual a 1024px */
+
+@media only screen and (min-width: 1024px) {
+  .otherSkills-title {
+    font-size: 40px;
+  }
+
+  .otherSkills-subtitle {
+    font-size: 25px;
+    margin: 30px auto;
+  }
+
+  .otherSkills-list {
+    /*_ Solo para igualar a Skills   */
+    display: block;
+  }
+
+  .otherSkillsGrid-container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "mainframe networking security"
+      "mainframe networking security";
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(252px);
+    grid-gap: 2px;
+  }
+
+  .mainframe {
+    grid-area: mainframe;
+    justify-self: start;
+    align-self: flex-start;
+  }
+
+  .networking {
+    grid-area: networking;
+    justify-self: center;
+    align-self: flex-start;
+  }
+
+  .security {
+    grid-area: security;
+    justify-self: flex-end;
+    align-self: flex-start;
+  }
+}
