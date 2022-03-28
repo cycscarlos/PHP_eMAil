@@ -1,7 +1,7 @@
 # Carlos_Colmenares_A
 
-Portfolio o CV profile using Progressive Web App (PWA)
+Portfolio o CV profile using PHP to manage email sending
 
-Also use PHP routine to manage email sending
+At follow the PHP routine code:
 
 https://github.com/cycscarlos/PWA_Profile/blob/main/img/PHP-email-code.png
